@@ -1,20 +1,30 @@
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github-dark-dimmed.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
-<pre>
-    <code>
-        local Class = {}
-        Class.__index = Class
+<!DOCTYPE html>
+<html>
 
-        function Class.new() 
-            local self = setmetatable({
-                Name  = "Mark Jianu",
-                Study = "Northeastern CS 2029",
-            }, Class)
-            return self
-        end
-    </code>
-</pre>
+<head>
+    <title>Mark Jianu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github-dark-dimmed.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
 
+<body>
+    <pre>
+        <code>
+            local Class = {}
+            Class.__index = Class
 
+            function Class.new()
+                local self = setmetatable({
+                    Name  = "Mark Jianu",
+                    Study = "Northeastern CS 2029",
+                }, Class)
+                return self
+            end
+        </code>
+    </pre>
+</body>
+
+</html>
